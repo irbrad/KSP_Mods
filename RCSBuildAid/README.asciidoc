@@ -1,0 +1,226 @@
+RCS Build Aid Plugin
+====================
+Elián Hanisch <lambdae2@gmail.com>
+v0.4.6, April 2014:
+
+Aid tool for balancing RCS thrusters around the center of mass while building a
+rocket, and a bit more.
+
+Requirements
+------------
+
+* KSP version 0.23, 0.23.5
+
+Optional
+~~~~~~~~
+
+* blizzy78's toolbar, http://forum.kerbalspaceprogram.com/threads/60863
+ 
+Installation
+------------
+
+Just copy RCSBuildAid directory into your KSP's GameData directory. 
+
+Features
+--------
+
+* Display thrust and torque forces caused by RCS or engines.
+* Delta V readout for RCS.
+* Dry center of mass marker.
+* "Average" center of mass marker.
+* The CoM marker represents better the situation in flight.
+* Ability to resize editor's overlay markers.
+* Display total mass of resources.
+
+Usage
+-----
+
+This plugin can only be used while in VAB (Vehicular Assembly Building) or in 
+SPH (Space Plane Hangar). If you have blizzy78's toolbar installed, you will see 
+RCSBuildAid's button in the toolbar, if you aren't using the toolbar then 
+RCSBuildAid will be enabled whenever the Center of Mass (CoM) marker is enabled.
+Once enabled, you should see RCSBuildAid's window and an extra red marker 
+close to the CoM marker, this is the Dry Center of Mass (DCoM) marker.
+
+Forces
+~~~~~~
+
+The forces displayed are of 3 types:
+
+Part forces::
+Forces exerted by parts, they are colored cyan for RCS and yellow for engines.
+
+Translation force or thrust::
+Colored in green, represents the translation motion of your vessel, essentially 
+your vessel's thrust. A green marker near the tip of the arrow indicates  where
+it should be pointing ideally.
+
+Torque force::
+Colored in red, represents the resulting torque the thrusters are exerting into
+your vessel. The effect of this torque is represented by a circular arrow, which 
+is proportional to the expected angular acceleration. 
+When you see a red arrow, it means that in the current configuration and with 
+the given input your vessel will try to rotate, however, depending of your 
+vessel's mass and of its distribution this rotation might not be noticeable, you 
+can gauge this with the circular arrow. Like in the translation force, a red 
+marker in the arrow's tip would be indicating the ideal direction.
+
+Markers
+~~~~~~~
+
+CoM::
+The Center of Mass marker, colored yellow. You should be familiar with this one,
+and if you're a savvy KSP player you will know that some parts, while being 
+listed as having mass in the editor, actually don't have any during playtime, 
+the most egregious offender being the small gear bay used for planes. This means
+that the CoM marker in the stock game isn't accurate when using these parts, but
+RCS Build Aid fixes it.
+
+DCoM::
+The Dry Center of Mass marker, colored red, indicates the center of mass for
+your vessel without resources. Which resources you want to remove can be 
+configured from the `Mass` tab.
+
+ACoM::
+This is the Average Center of Mass marker, colored orange, shows the middle 
+point between the CoM and DCoM.
+
+All forces are referenced to either the CoM or DCoM markers, you select which
+one from the GUI. Checking how forces change depending of where your CoM is will
+help you to understand how to balance best your vessel, eg, for a vessel that
+docks with almost no fuel it would be best to balance RCS around the DCoM and
+ignore the CoM marker. If you want your vessel to be balanced in most situations
+you need to build your vessel in a way that keeps both center of masses as close
+as possible, or if you can't achieve this, balancing around the ACoM marker 
+would be the best compromise.
+
+RCS mode
+~~~~~~~~
+
+This mode is for balancing RCS, enabled with the `RCS` button. It will show the
+torque and translation forces of the installed RCS for the active direction. RCS
+forces are represented by cyan vectors.
+
+=== Switching direction
+
+You can change direction from the GUI, or alternatively with the same keys for 
+translating your vessel. If default game settings the keys are:
+
+[horizontal]
+H :: Set RCS forces to move forward.
+N :: Set RCS forces to move backwards.
+L :: Set RCS forces to translate right.
+J :: Set RCS forces to translate left.
+I :: Set RCS forces to translate down.
+K :: Set RCS forces to translate up.
+
+NOTE: Setting the same direction twice is a shortcut for disable RCS mode.
+
+=== Balancing RCS
+
+Having balanced RCS means that when you're translating your vessel won't rotate
+and when you are rotating it won't translate, this is important for easy
+docking. This depends of the position of your CoM and the placement of your
+RCS thrusters.
+
+From the GUI you can select to balance either translation or rotation.
+
+==== Balancing translation
+
+The RCS will attempt to translate your vessel to the given direction, with the
+green arrow being the actual resulting motion. In this situation you want
+translation motion without any rotation, so you want to place your RCS around
+your CoM in a way that reduces the torque vector (red arrow) as much as
+possible.
+
+NOTE: Is not necessary to completely cancel out the torque force, sometimes 
+might be difficult. If you don't see the circular arrow then it means that the
+current torque is acceptable and shouldn't interfere during normal docking.
+
+==== Balancing rotation
+
+Is the same than translation except that here you want to reduce the translation
+vector (green arrow) while keeping the torque vector aligned with the red
+marker. In most vessels you won't need to do this since balanced translation
+implies balanced rotation, but this is not always true.
+
+Engine Mode
+~~~~~~~~~~~
+
+This mode is for engine balancing, enabled with the `Engines` button. The
+engines used for calculating forces are always the engines in the bottommost
+stage, if you want to disable some engines you can to move them to a higher
+stage.
+
+Markers
+~~~~~~~
+
+From the `Mass` tab you will see some information about the mass of your vessel 
+and resources, and options for show, hide or change the size of the CoM markers. 
+You can also select which type of resource should be removed for the calculation 
+of the DCoM, disabled resources will be removed from your vessel's dry mass.
+
+Incompatible plugins
+--------------------
+
+This plugin will work only with parts using stock modules. Modded parts with 
+custom modules or that had their stock modules replaced will not work.
+
+*Plugins known to be incompatible*
+
+* KerbCom Avionics:: It replaces stock RCS modules with its own.
+
+Known Issues
+------------
+
+* Delta V readout for RCS only works when the CoM is selected and isn't 
+accurate for modded RCS. In these situations the dV readout will not be shown.
+
+Compiling
+---------
+
+This project picks its references for a local directory for avoid commiting the 
+absolute path of library files into the repository. So if you want this project
+to find its references without changing .csproj files you have create a local 
+directory named `Libraries` and copy (or symlink) the directory `Managed` from a 
+KSP install and Toolbar.dll from blizzy78's toolbar mod (if you wish to compile 
+RCSBuildAidToolbar.dll).
+
+  Libraries\
+    Managed -> ${KSP_DIR}/KSP_Data/Managed
+    Toolbar.dll -> ${KSP_DIR}/GameData/000_Toolbar/Toolbar.dll
+
+Reporting Bugs
+--------------
+
+You can report bugs or issues directly to GitHub:
+https://github.com/m4v/RCSBuildAid/issues
+
+Links
+-----
+
+Repository in GitHub:
+https://github.com/m4v/RCSBuildAid
+
+Forum thread:
+http://forum.kerbalspaceprogram.com/showthread.php/35996
+
+License
+-------
+
+This plugin is distributed under the terms of the LGPLv3.
+
+---------------------------------------
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU Lesser General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU Lesser General Public License for more details.
+
+You should have received a copy of the GNU Lesser General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+---------------------------------------

@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<config>
+    <double name="gui_scale">0.649999976158142</double>
+    <rect name="window_position">
+        <xmin>113</xmin>
+        <xmax>373</xmax>
+        <ymin>136.725</ymin>
+        <ymax>433.775</ymax>
+    </rect>
+    <bool name="show_cdi">1</bool>
+    <bool name="show_rolldigits">1</bool>
+</config>

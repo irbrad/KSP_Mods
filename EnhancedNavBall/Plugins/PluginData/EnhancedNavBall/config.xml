@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<config>
+    <rect name="IconPos">
+        <xmin>184</xmin>
+        <xmax>216</xmax>
+        <ymin>0</ymin>
+        <ymax>32</ymax>
+    </rect>
+    <bool name="WindowVisibleByActiveScene">0</bool>
+    <string name="NavballPosition">1.09375</string>
+    <string name="NavballScale">1</string>
+    <string name="NavballRotation">0</string>
+    <string name="GhostPosition">0.1</string>
+</config>

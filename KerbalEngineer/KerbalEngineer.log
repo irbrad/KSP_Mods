@@ -1,0 +1,119 @@
+Executing: KerbalEngineer - 1.0.8.1
+Assembly: /Users/brad/Library/Application Support/Steam/SteamApps/common/Kerbal Space Program/GameData/KerbalEngineer/KerbalEngineer.dll
+
+[Log 13:41:39.6641040]: FlightEngineerCore->Awake
+[Log 13:41:39.6647040]: ActionMenu was created.
+[Log 13:41:39.6879580]: ActionMenu->Awake
+[Log 13:41:41.0621090]: FlightEngineerCore->Start
+[Log 13:41:41.0633600]: ActionMenu->Start
+[Log 13:41:41.2780470]: ActionMenuGui was created.
+[Exception 13:42:12.3133760]: DisplayStack->DrawSections // GUILayout: Mismatched LayoutGroup.Repaint
+[]:   at UnityEngine.GUILayoutUtility.BeginLayoutGroup (UnityEngine.GUIStyle style, UnityEngine.GUILayoutOption[] options, System.Type LayoutType) [0x00000] in <filename unknown>:0 
+  at UnityEngine.GUILayout.BeginHorizontal (UnityEngine.GUIContent content, UnityEngine.GUIStyle style, UnityEngine.GUILayoutOption[] options) [0x00000] in <filename unknown>:0 
+  at UnityEngine.GUILayout.BeginHorizontal (UnityEngine.GUILayoutOption[] options) [0x00000] in <filename unknown>:0 
+  at KerbalEngineer.Flight.Readouts.Rendezvous.TargetSelector.DrawSearch () [0x00000] in <filename unknown>:0 
+  at KerbalEngineer.Flight.Readouts.Rendezvous.TargetSelector.Draw () [0x00000] in <filename unknown>:0 
+  at KerbalEngineer.Flight.Sections.SectionModule.DrawReadoutModules () [0x00000] in <filename unknown>:0 
+  at KerbalEngineer.Flight.Sections.SectionModule.Draw () [0x00000] in <filename unknown>:0 
+  at KerbalEngineer.Flight.DisplayStack.DrawSections (IEnumerable`1 sections) [0x00000] in <filename unknown>:0 
+
+[Log 13:43:25.8098190]: ActionMenu was destroyed.
+[Log 13:43:25.8157990]: ActionMenu->OnDestroy
+[Log 13:43:25.8185200]: FlightEngineerCore->OnDestroy
+[Log 13:43:26.3366020]: ActionMenuGui was destroyed.
+[Log 13:43:58.6495690]: BuildToolbar->Awake
+[Log 13:43:59.0760980]: BuildToolbar->OnGuiAppLauncherReady
+[Log 13:44:09.9806890]: BuildToolbar->OnDestroy
+[Log 13:44:10.6423270]: BuildToolbar->Awake
+[Log 13:44:11.1767310]: BuildToolbar->OnGuiAppLauncherReady
+[Log 13:44:17.1561450]: BuildToolbar->OnDestroy
+[Log 13:44:19.1322420]: FlightEngineerCore->Awake
+[Log 13:44:19.1323240]: ActionMenu was created.
+[Log 13:44:19.1323990]: ActionMenu->Awake
+[Log 13:44:21.2680680]: FlightEngineerCore->Start
+[Log 13:44:21.2684310]: ActionMenu->Start
+[Log 13:44:21.4138120]: ActionMenuGui was created.
+[Log 13:45:53.7552290]: ActionMenu->OnDestroy
+[Log 13:45:53.7576200]: FlightEngineerCore->OnDestroy
+[Log 13:45:53.7622340]: ActionMenu was destroyed.
+[Log 13:45:54.3326440]: FlightEngineerCore->Awake
+[Log 13:45:54.3328220]: ActionMenu was created.
+[Log 13:45:54.3329020]: ActionMenu->Awake
+[Log 13:45:56.3809550]: FlightEngineerCore->Start
+[Log 13:45:56.3815740]: ActionMenu->Start
+[Log 13:45:56.4873130]: ActionMenuGui was destroyed.
+[Log 13:45:56.5058090]: ActionMenuGui was created.
+[Log 13:52:43.2984880]: FlightEngineerCore->OnDestroy
+[Log 13:52:43.3101410]: ActionMenu was destroyed.
+[Log 13:52:43.3127220]: ActionMenu->OnDestroy
+[Log 13:52:43.9214450]: FlightEngineerCore->Awake
+[Log 13:52:43.9215220]: ActionMenu was created.
+[Log 13:52:43.9215960]: ActionMenu->Awake
+[Log 13:52:46.0124080]: FlightEngineerCore->Start
+[Log 13:52:46.0127630]: ActionMenu->Start
+[Log 13:52:46.1370500]: ActionMenuGui was destroyed.
+[Log 13:52:46.1507480]: ActionMenuGui was created.
+[Log 14:35:27.4338300]: ActionMenu was destroyed.
+[Log 14:35:27.4426030]: ActionMenu->OnDestroy
+[Log 14:35:27.4484120]: FlightEngineerCore->OnDestroy
+[Log 14:35:28.0577630]: FlightEngineerCore->Awake
+[Log 14:35:28.0578370]: ActionMenu was created.
+[Log 14:35:28.0579080]: ActionMenu->Awake
+[Log 14:35:30.2440040]: FlightEngineerCore->Start
+[Log 14:35:30.2445380]: ActionMenu->Start
+[Log 14:35:30.3566120]: ActionMenuGui was destroyed.
+[Log 14:35:30.4146130]: ActionMenuGui was created.
+[Log 14:47:55.5133880]: ActionMenu->OnDestroy
+[Log 14:47:55.5221540]: ActionMenu was destroyed.
+[Log 14:47:55.5257160]: FlightEngineerCore->OnDestroy
+[Log 14:47:56.1622280]: FlightEngineerCore->Awake
+[Log 14:47:56.1623130]: ActionMenu was created.
+[Log 14:47:56.1623900]: ActionMenu->Awake
+[Log 14:47:57.5409940]: FlightEngineerCore->Start
+[Log 14:47:57.5413450]: ActionMenu->Start
+[Log 14:47:57.5822020]: ActionMenuGui was destroyed.
+[Log 14:47:57.6462300]: ActionMenuGui was created.
+[Log 14:49:27.1476980]: ActionMenu was destroyed.
+[Log 14:49:27.1501440]: ActionMenu->OnDestroy
+[Log 14:49:27.1514030]: FlightEngineerCore->OnDestroy
+[Log 14:49:27.7644910]: FlightEngineerCore->Awake
+[Log 14:49:27.7645720]: ActionMenu was created.
+[Log 14:49:27.7646480]: ActionMenu->Awake
+[Log 14:49:29.0377660]: FlightEngineerCore->Start
+[Log 14:49:29.0381960]: ActionMenu->Start
+[Log 14:49:29.0824580]: ActionMenuGui was destroyed.
+[Log 14:49:29.2585520]: ActionMenuGui was created.
+[Log 14:49:55.4331130]: ActionMenu->OnDestroy
+[Log 14:49:55.4365950]: FlightEngineerCore->OnDestroy
+[Log 14:49:55.4438470]: ActionMenu was destroyed.
+[Log 14:49:56.4339880]: FlightEngineerCore->Awake
+[Log 14:49:56.4340760]: ActionMenu was created.
+[Log 14:49:56.4341520]: ActionMenu->Awake
+[Log 14:49:57.7292290]: FlightEngineerCore->Start
+[Log 14:49:57.7295720]: ActionMenu->Start
+[Log 14:49:57.7712500]: ActionMenuGui was destroyed.
+[Log 14:49:57.8744600]: ActionMenuGui was created.
+[Log 14:50:04.4947340]: ActionMenu was destroyed.
+[Log 14:50:04.4961190]: ActionMenu->OnDestroy
+[Log 14:50:04.4992490]: FlightEngineerCore->OnDestroy
+[Log 14:50:05.1417880]: FlightEngineerCore->Awake
+[Log 14:50:05.1418670]: ActionMenu was created.
+[Log 14:50:05.1419430]: ActionMenu->Awake
+[Log 14:50:06.3583190]: FlightEngineerCore->Start
+[Log 14:50:06.3587900]: ActionMenu->Start
+[Log 14:50:06.4016490]: ActionMenuGui was destroyed.
+[Log 14:50:06.4576050]: ActionMenuGui was created.
+[Log 14:58:19.7992810]: ActionMenu was destroyed.
+[Log 14:58:19.8034520]: ActionMenu->OnDestroy
+[Log 14:58:19.8055070]: FlightEngineerCore->OnDestroy
+[Log 14:58:20.6617120]: FlightEngineerCore->Awake
+[Log 14:58:20.6618470]: ActionMenu was created.
+[Log 14:58:20.6619250]: ActionMenu->Awake
+[Log 14:58:22.0499330]: FlightEngineerCore->Start
+[Log 14:58:22.0504210]: ActionMenu->Start
+[Log 14:58:22.0919450]: ActionMenuGui was destroyed.
+[Log 14:58:22.1440430]: ActionMenuGui was created.
+[Log 15:11:52.3547130]: FlightEngineerCore->OnDestroy
+[Log 15:11:52.3551470]: ActionMenu->OnDestroy
+[Log 15:11:52.3579440]: ActionMenu was destroyed.
+[Log 15:11:53.3665860]: ActionMenuGui was destroyed.

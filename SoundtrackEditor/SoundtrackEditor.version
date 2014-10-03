@@ -1,0 +1,21 @@
+{
+	"NAME":"Soundtrack Editor",
+	"URL":"http://ksp-avc.cybutek.net/version.php?id=14",
+	"DOWNLOAD":"http://kerbal.curseforge.com/ksp-mods/221503-soundtrack-editor",
+	"VERSION":{
+		"MAJOR":2,
+		"MINOR":1,
+		"PATCH":1,
+		"BUILD":0
+	},
+	"KSP_VERSION":{
+		"MAJOR":0,
+		"MINOR":24,
+		"PATCH":2
+	},
+    "KSP_VERSION_MIN":{
+        "MAJOR":0,
+        "MINOR":22,
+        "PATCH":0
+    }
+}

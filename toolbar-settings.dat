@@ -1,0 +1,148 @@
+toolbars
+{
+	kspVersions = 0.24.0,0.24.1,0.24.2
+	FLIGHT
+	{
+		toolbar
+		{
+			x = 220
+			y = 1
+			width = 82
+			height = 147
+			autoHide = False
+			drawBorder = True
+			useKSPSkin = False
+			buttonOrder = 
+			visibleButtons = DockingAlignment.dockalign,KER.engineerButton,Kethane.toggle,Chatterer.UI,AmbientLightAdjustment.adjustLevels,EnhancedNavball.btnEnhancedNavballToolbarIcon,SCANsat.BigMap,SCANsat.SmallMap,SCANsat.UIMenu,VOID.coreToggle,RCSla.RCSlaBtn
+		}
+	}
+	EDITOR
+	{
+		toolbar
+		{
+			x = 477
+			y = 36
+			width = 51
+			height = 38
+			autoHide = False
+			drawBorder = True
+			useKSPSkin = False
+			buttonOrder = 
+			visibleButtons = RCSBuildAid.mainButton
+		}
+	}
+	TRACKSTATION
+	{
+		toolbar
+		{
+			x = 0
+			y = 0
+			width = 49
+			height = 38
+			autoHide = False
+			drawBorder = True
+			useKSPSkin = False
+			buttonOrder = 
+			visibleButtons = 
+		}
+	}
+	SPH
+	{
+		toolbar
+		{
+			x = 0
+			y = 0
+			width = 49
+			height = 38
+			autoHide = False
+			drawBorder = True
+			useKSPSkin = False
+			buttonOrder = 
+			visibleButtons = 
+		}
+	}
+	MAINMENU
+	{
+		toolbar_2096493517
+		{
+			x = 160
+			y = 219
+			width = 250
+			height = 38
+			autoHide = False
+			drawBorder = True
+			useKSPSkin = False
+			buttonOrder = 
+			visibleButtons = 
+		}
+		toolbar
+		{
+			x = 220
+			y = 1
+			width = 82
+			height = 147
+			autoHide = False
+			drawBorder = True
+			useKSPSkin = False
+			buttonOrder = 
+			visibleButtons = DockingAlignment.dockalign,KER.engineerButton,Kethane.toggle,Chatterer.UI,AmbientLightAdjustment.adjustLevels,EnhancedNavball.btnEnhancedNavballToolbarIcon,SCANsat.BigMap,SCANsat.SmallMap,SCANsat.UIMenu,VOID.coreToggle,RCSla.RCSlaBtn
+		}
+		toolbar_489825139
+		{
+			x = 300
+			y = 300
+			width = 250
+			height = 38
+			autoHide = False
+			drawBorder = True
+			useKSPSkin = False
+			buttonOrder = 
+			visibleButtons = 
+		}
+	}
+	FLIGHTMAP
+	{
+		toolbar_1759423139
+		{
+			x = 182
+			y = -3
+			width = 250
+			height = 38
+			autoHide = False
+			drawBorder = True
+			useKSPSkin = False
+			buttonOrder = 
+			visibleButtons = Kethane.toggle,KER.engineerButton,DockingAlignment.dockalign,Chatterer.UI,SCANsat.UIMenu
+		}
+	}
+	SPACECENTER
+	{
+		toolbar_2096493517
+		{
+			x = 160
+			y = 219
+			width = 250
+			height = 38
+			autoHide = False
+			drawBorder = True
+			useKSPSkin = False
+			buttonOrder = 
+			visibleButtons = 
+		}
+	}
+	SETTINGS
+	{
+		toolbar_489825139
+		{
+			x = 300
+			y = 300
+			width = 250
+			height = 38
+			autoHide = False
+			drawBorder = True
+			useKSPSkin = False
+			buttonOrder = 
+			visibleButtons = 
+		}
+	}
+}
